@@ -1,0 +1,244 @@
+
+body{
+	background: #02010a;
+	font-family: 'Dancing Script', cursive;
+	animation: slidein-animacion 1s;
+}
+#cabecera {
+    animation-duration: 1s;
+    animation-name: slidein-animacion;
+		-webkit-animation-duration: 1s;
+		-moz-box-animation-duration: 1s;
+		-o-animation-duration: 1s;
+		animation-duration: 1s;
+}
+@keyframes slidein-animacion {
+    0% {
+        margin-top: 150%;
+    }
+  60%{
+        margin-top: -5%;
+    }
+		100%{
+		margin-top: 0%;
+ }
+}
+#contenido {
+	display: flex;
+	flex-direction: column;
+}
+#cabecera{
+	font-size: 22px;
+	width: 960px;
+	text-align: left;
+	margin: 0 auto;
+	background-color: #5b7989;
+	height: 2em;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	color:white;
+	border-radius: 10px 10px 0px 0px;
+	-moz-boder-radius: 10px 10px 0px 0px;
+	-webkit-boder-radius: 10px 10px 0px 0px;
+	-moz-height: 2em;
+	-webkit-height: 2em;
+}
+#contenido .tex1 {
+	text-align: left;
+	width: 45%;
+	float: left;
+	padding-left: 22px;
+}
+#contenido .tex2 {
+	text-align: right;
+	width: 45%;
+	float: right;
+	padding-right: 20px;
+}
+#sombra1 {
+text-shadow: 2px 2px #02010a;
+}
+
+a{
+color: white;
+}
+#cabecera a {
+	text-align: left;
+	margin-right: 10px;
+}
+#imagencentral{
+	width: 960px;
+	margin: 0 auto;
+}
+#imagencentral article{
+	box-sizing: border-box;
+	float:left;
+	height: 100%;
+	padding: 2%;
+	text-align: center;
+}
+#columna1{
+background-color: #82c3a6;
+width: 100%;
+height: 90%;
+}
+#imagensecundaria{
+	width: 960px;
+	margin: 0 auto;
+}
+#columna2{
+background-color: #d5c75f;
+width: 50%;
+height: 90%;
+}
+#imagensecundaria article{
+	box-sizing: border-box;
+	float:left;
+	height: 100%;
+	padding: 2%;
+	text-align: center;
+}
+#columna3{
+background-color: #d5c75f;
+width: 50%;
+height: 90%;
+}
+#columna2> img:hover {
+ transform: rotate(10deg);
+ -webkit-transform: rotate(10deg);
+ -moz-transform: rotate(10deg);
+}
+#columna3> img:hover {
+ transform:translate(20px,-5px);
+ -webkit-transform:translate(20px,-5px);
+ -moz-transform:translate(20px,-5px);
+}
+#columna2 img{
+	border: 2px solid #82c3a6;
+	box-shadow: 2px 2px black;
+	-webkit-box-shadow: 2px 2px black;
+	-moz-box-shadow: 2px 2px black;
+}
+#columna3 img{
+	border: 2px solid #82c3a6;
+	box-shadow: 2px 2px #02010a.;
+	-webkit-box-shadow: 2px 2px black;
+	-moz-box-shadow: 2px 2px black;
+}
+img{
+	box-shadow: 2px 2px #02010a;
+	-webkit-box-shadow: 2px 2px #02010a;
+	-moz-box-shadow: 2px 2px #02010a;
+}
+#piedepagina{
+	width: 960px;
+	margin: 0 auto;
+	background-color: #C6d5c5;
+	border-radius: 0px 0px 10px 10px;
+	-moz-boder-radius: 0px 0px 10px 10px;
+	-webkit-boder-radius: 0px 0px 10px 10px;
+}
+#piedepagina article{
+	text-align: left;
+	box-sizing: border-box;
+	float:left;
+	height: 100%;
+	padding: 3%;
+	text-align: left;
+}
+#columna7 img{
+	box-shadow: none;
+}
+#columna6 img{
+	box-shadow: none;
+}
+#columna4, #columna5, #columna6, #columna7{
+width: 25%;
+height: 90px;
+}
+@media screen and (max-width: 960px){
+	#cabecera{
+		width: 100%;
+		margin: 0 auto;
+	}
+	#contenido .tex1 {
+		text-align: center;
+		width: 100%;
+		float: left;
+		border-bottom: 10px;
+	}
+	#contenido .tex2 {
+		text-align: center;
+		width: 100%;
+		float: right;
+		border-bottom: 10px;
+	}
+	#imagencentral{
+		width: 100%;
+		margin: 0 auto;
+	}#imagensecundaria{
+		width: 100%;
+		margin: 0 auto;
+	}
+	#piedepagina{
+		width: 100%;
+		margin: 0 auto;
+	}
+	#piedepagina article{
+		text-align: left;
+		box-sizing: border-box;
+		float:left;
+		height: 100%;
+		padding: 2%;
+		text-align: left;
+	}
+}
+@media screen and (max-width: 480px){
+	nav {
+			text-align: center;
+		}
+			#cabecera
+		{
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			margin: 0 auto;
+		}
+ 			#imagencentral{
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+	  }
+			#columna1{
+		width: 100%;
+	  }
+			#imagensecundaria{
+			width: 100%;
+			margin: 0 auto;
+		}
+			#columna2, #columna3{
+			width: 100%;
+		}
+			#piedepagina{
+			width: 100%;
+			margin: 0 auto;
+			}
+			#columna4, #columna5, #columna6, #columna7{
+			width: 100%;
+			}
+			#contenido .tex1 {
+				padding-left: 0px;
+			}
+			#contenido .tex2 {
+				padding-right: 0px;
+			}
+}
+.adaptativa-porcentaje{
+	width:90%;
+}
+.adaptativa-porcentaje-1{
+	width:90%;
+}
+.adaptativa-porcentaje-2{
+	width:90%;
+}
